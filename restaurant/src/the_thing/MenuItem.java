@@ -13,12 +13,12 @@ public class MenuItem {
     public MenuItem(int nextItemId, String name, Double price, String description, String category, Date dateAdded) {
         nextItemId = nextItemId;
         nextItemId++;
-        name = name;
-        price = price;
-        description = description;
-        category = category;
-        dateAdded = dateAdded;
-        //the_thing.Menu.setLastEditDate();
+        this.name = name;
+        this.price = price;
+        this.description = description;
+        this.category = category;
+        this.dateAdded = dateAdded;
+        //Menu.setLastEditDate();
     }
     public MenuItem(String name, Double price, String description, String category){
         this(nextItemId, name, price, description, category, new Date());
@@ -53,6 +53,5 @@ public class MenuItem {
     public void setCategory(String category) {
         this.category = category;
     }
-
 
 }
